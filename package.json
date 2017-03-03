@@ -1,0 +1,26 @@
+{
+  "name": "npm-install-check",
+  "version": "1.0.0",
+  "description": "A way to check whether an npm install is needed",
+  "main": "index.js",
+  "bin": {
+    "conditional-npm-install" : "bin/conditional-install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlindley/npm-install-check.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "install"
+  ],
+  "author": "David Lindley <david@dlindley.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidlindley/npm-install-check/issues"
+  },
+  "homepage": "https://github.com/davidlindley/npm-install-check#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

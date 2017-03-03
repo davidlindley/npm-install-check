@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/davidlindley/codebases/npm-install-check',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/davidlindley/.npm correctMkdir not in flight; initializing
+10 info lifecycle @davidlindley/npm-install-check@1.0.0~prepublish: @davidlindley/npm-install-check@1.0.0
+11 silly lifecycle @davidlindley/npm-install-check@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/davidlindley/codebases/npm-install-check' ]
+13 verbose tarball /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package.tgz
+14 verbose folder /Users/davidlindley/codebases/npm-install-check
+15 verbose addLocalTarball adding from inside cache /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package.tgz
+16 verbose correctMkdir /Users/davidlindley/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @davidlindley/npm-install-check@1.0.0
+18 verbose afterAdd /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/davidlindley/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package/package.json written
+21 silly publish { name: '@davidlindley/npm-install-check',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'A way to check whether an npm install is needed',
+21 silly publish   main: 'index.js',
+21 silly publish   bin: { 'conditional-npm-install': 'bin/conditional-install.js' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/davidlindley/npm-install-check.git' },
+21 silly publish   keywords: [ 'node', 'npm', 'install' ],
+21 silly publish   author: { name: 'David Lindley', email: 'david@dlindley.co.uk' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/davidlindley/npm-install-check/issues' },
+21 silly publish   homepage: 'https://github.com/davidlindley/npm-install-check#readme',
+21 silly publish   dependencies: {},
+21 silly publish   devDependencies: {},
+21 silly publish   readme: '# npm-install-check\nChecks if a npm install is needed. Useful for auto deployments as npm install can be time consuming.\n\n# Usage\n`conditional-npm-install`\n\n# How it works\nIt will check for the `package.json` file and compare it with a old version `_package.old.json`.\nIf there are any differences between the two then it will run an npm install in a `child process`\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '647fd7f60e4517fef0ce50dd0d6d837056960e00',
+21 silly publish   _id: '@davidlindley/npm-install-check@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: 'c2ca358f5733898ccafbdb6e77ffbbdcd68ac544',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @davidlindley/npm-install-check
+24 silly mapToRegistry scope (from package name) @davidlindley
+25 verbose mapToRegistry no registry URL found in name for scope @davidlindley
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@davidlindley/npm-install-check',
+28 silly mapToRegistry   scope: '@davidlindley',
+28 silly mapToRegistry   escapedName: '@davidlindley%2fnpm-install-check',
+28 silly mapToRegistry   name: '@davidlindley/npm-install-check',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@davidlindley%2fnpm-install-check
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /Users/davidlindley/.npm/@davidlindley/npm-install-check/1.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@davidlindley%2fnpm-install-check
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 3:45:02 PM
+35 verbose request using bearer token for auth
+36 verbose request id 0e3578f32b7464a7
+37 http request PUT https://registry.npmjs.org/@davidlindley%2fnpm-install-check
+38 http 403 https://registry.npmjs.org/@davidlindley%2fnpm-install-check
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '128',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Fri, 03 Mar 2017 15:45:04 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1488555902.294823,VS0,VE1924' }
+40 verbose request invalidating /Users/davidlindley/.npm/registry.npmjs.org/_40davidlindley_252fnpm-install-check on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : @davidlindley/npm-install-check
+42 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+43 verbose statusCode 403
+44 verbose pkgid @davidlindley/npm-install-check
+45 verbose cwd /Users/davidlindley/codebases/npm-install-check
+46 error Darwin 16.4.0
+47 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--access=public"
+48 error node v6.9.2
+49 error npm  v3.10.9
+50 error code E403
+51 error "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : @davidlindley/npm-install-check
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
