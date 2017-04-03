@@ -4,7 +4,8 @@
   "description": "A way to check whether an npm install is needed",
   "main": "index.js",
   "bin": {
-    "conditional-npm-install" : "bin/conditional-install.js"
+    "conditional-npm-install" : "bin/conditional-install.js",
+    "npm-install-check": "bin/conditional-install.js"
   },
   "repository": {
     "type": "git",
